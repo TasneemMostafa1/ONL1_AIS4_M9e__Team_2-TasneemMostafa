@@ -1,0 +1,8 @@
+env/
+Models/svm_model1.pkl
+TeePublic_review.csv
+TeePublic_review_with_sentiments.csv
+outs/Test_process.csv
+outs/Train_process.csv
+test.csv
+train.csv

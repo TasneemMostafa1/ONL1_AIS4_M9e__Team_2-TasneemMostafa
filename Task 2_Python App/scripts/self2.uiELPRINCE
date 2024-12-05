@@ -1,0 +1,7 @@
+{'id': 'self2', 'pos_x': 'center', 'pos_y': 'center', 'width': 500, 'height': 500, 'bg': 'white', 'overrideredirect': '0', 'topmost': '0', 'title': 'tk', 'icon': 'None'}
+[{'id': 'Checkbutton5', 'type': 'place', 'master': 'self2', 'width': '121', 'height': '30', 'x': '11', 'y': '54', 'text': 'Checkbutton', 'bg': '#f0f0f0', 'fg': 'black', 'font family': 'arial', 'font size': '13', 'highlightcolor': 'None', 'highlightbackground': 'None', 'activebackground': 'None', 'activeforeground': 'None', 'side': 'left', 'fill': 'None', 'expand': 'false', 'padx': 10, 'pady': 10}, {'id': 'Label1', 'type': 'place', 'master': 'self2', 'width': '284', 'height': '36', 'x': '10', 'y': '10', 'text': 'choose columns that you want ', 'bg': 'white', 'fg': 'black', 'font family': 'arial', 'font size': '13', 'image': 'None', 'side': 'left', 'fill': 'None', 'expand': 'false', 'padx': 10, 'pady': 10}]
+['Checkbutton5', 'Label1']
+[1, 1, 1, 1, 6, 1, 2, 1, 1, 1, 1, 1]
+[0, 0]
+0
+['Checkbutton', 'Label']

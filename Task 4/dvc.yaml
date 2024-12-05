@@ -1,0 +1,31 @@
+stages:
+  prepare:
+    cmd: python data_prep.py
+    deps:
+      - data_prep.py
+    outs:
+      - outs/Train_prep.csv
+      - outs/Test_prep.csv
+
+  process:
+    cmd: python data_process.py
+    deps:
+      - data_process.py
+      - outs/Train_prep.csv
+      - outs/Test_prep.csv
+    outs:
+      - outs/Train_process.csv
+      - outs/Test_process_df.csv
+
+  train:
+    cmd: python data_train.py
+    deps:
+      - outs/process_df.csv
+      - outs/Train.csv
+      - outs/Test.csv
+      - outs/Train_process.csv
+      - outs/Test_process_df.csv
+      
+    metrics:
+      - metrics.json:
+          cache: false 

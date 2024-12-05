@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python data_prep.py
+    deps:
+    - path: data_prep.py
+      hash: md5
+      md5: abe2ce5ea164d5d3696d2b985d98ce46
+      size: 546
+    outs:
+    - path: outs/Test.csv
+      hash: md5
+      md5: ed27402bb14eae044d2a5f7183660560
+      size: 278638
+    - path: outs/Train.csv
+      hash: md5
+      md5: 6e10ecf95e1da525bde723764dec7414
+      size: 2182609
+  process:
+    cmd: python data_process.py
+    deps:
+    - path: data_process.py
+      hash: md5
+      md5: 69bd5f7f0e27c78d967df3d2c326b3fd
+      size: 1000
+    - path: outs/Test.csv
+      hash: md5
+      md5: ed27402bb14eae044d2a5f7183660560
+      size: 278638
+    - path: outs/Train.csv
+      hash: md5
+      md5: 6e10ecf95e1da525bde723764dec7414
+      size: 2182609
+    outs:
+    - path: outs/process_df.csv
+      hash: md5
+      md5: 4c57ac5dc7eec9b741d54c3d8185d552
+      size: 1529233014
